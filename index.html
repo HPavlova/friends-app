@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends app</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="logo">
+        <input type="text" id="search" placeholder="">
+    </header>
+    <div class="container">
+    <div class="filter">
+        <label>Фильтр:</label>
+        <select id="sort">
+            <option value="">Сортировать по ...</option>
+            <option value="name">имени</option>
+            <option value="age">возрасту</option>
+        </select>
+        <input type="text" id="filter-name" placeholder="Имя">
+        <input type="number" id="filter-min-age" placeholder="Минимальный возраст">
+        <input type="number" id="filter-max-age" placeholder="Максимальный возраст">
+        <button>Найти</button>
+    </div>
+    <div class="cards"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
