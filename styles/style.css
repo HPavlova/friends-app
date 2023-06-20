@@ -23,9 +23,14 @@ header input[type='text']{
     flex-wrap: wrap;
 }
 
-.card{
+.cards{
+    width: calc(80% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    width: 30%;
+.card{
+    width: calc((100% - 120px) / 3);
     margin: 10px;
     padding: 10px;
     background-color: #f1f1f1;
@@ -52,6 +57,7 @@ header input[type='text']{
 .filter {
     width: 20%;
     padding: 10px;
+    margin-top: 10px;
     background-color: #f1f1f1;
     border-radius: 5px;
 }
@@ -72,6 +78,11 @@ header input[type='text']{
     font-size: 16px;
     width: 100%;
     margin-bottom: 10px;
+}
+
+.filter input[type='text'],
+.filter input[type='number']{
+    width: calc(100% - 16px);
 }
 
 .filter button{
